@@ -1,0 +1,42 @@
+[
+    {
+        "name": "All",
+        "icon": "new-message",
+        "color":"#4D53B3"
+    },
+    {
+        "name": "Work",
+        "icon": "suitcase",
+        "color": "#E57057"
+    },
+    {
+        "name": "Study",
+        "icon": "open-book",
+        "color": "#540D6E"
+    },
+    {
+        "name": "Home",
+        "icon": "key",
+        "color": "#FFBC42"
+    },
+    {
+        "name": "Travel",
+        "icon": "aircraft",
+        "color": "#60A5F0"
+    },
+    {
+        "name": "Shopping",
+        "icon": "shopping-cart",
+        "color": "#59CA7B"
+    },
+    {
+        "name": "Music",
+        "icon": "note",
+        "color": "#F89279"
+    },
+    {
+        "name": "Art",
+        "icon": "brush",
+        "color": "#73D2DE"
+    }
+]
