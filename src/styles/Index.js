@@ -17,7 +17,7 @@ const styleModal = StyleSheet.create({
         paddingTop: 15,
     },
     content:{
-        flex: 10,
+        flex: 8,
         textAlign: "center",
         flexDirection: "column",
         alignItems: "flex-start",
@@ -26,14 +26,14 @@ const styleModal = StyleSheet.create({
         paddingBottom: 20,
     },
     taskInput:{
-        flex: 1,
+        flex: 2,
         textAlignVertical: 'top',
         alignContent: "flex-start",
         justifyContent: "flex-start",
         fontSize: 18,
     },
     contentButtonGroup:{
-        flex: 5,
+        flex: 3,
         flexDirection: "column",
         justifyContent:"flex-start",
         alignItems: "stretch",
@@ -57,7 +57,7 @@ const styleModal = StyleSheet.create({
     categoryGroup: {
         flex: 1,
         flexWrap: "wrap",
-        alignItems:"flex-start",
+        alignItems:"stretch",
         justifyContent: "flex-start",
     },
     tagCatergory:{
@@ -134,17 +134,6 @@ const styleCategory = StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-between",
-        paddingVertical: 5,
-    },
-    taskTextGroup:{
-        flex: 3,
-        flexDirection: "column",
-        alignItems: "flex-start",
-        justifyContent: "center"
-    },  
-    taskCheckBox:{
-        flex: 1,
-        alignItems: "center"
     },
     labelText:{
         fontSize: 15,
@@ -221,7 +210,7 @@ const styleHome = StyleSheet.create({
         height: 70,
         backgroundColor: '#5786FF',
         borderRadius: 100,
-    },  
+    },
     taskContainerRow:{
         flex:1,
         flexDirection: "row",
@@ -260,22 +249,30 @@ const styleLogin = StyleSheet.create({
     container: {
         flex: 1,
         flexDirection: 'column',
+        backgroundColor: '#FBFBFB',
+    },
+    logoApp:{
+        width: 150,
+        height: 150,
+        marginBottom: 20,
+        alignSelf: "center"
     },
     imageBackground:{
         flex: 1,
-        resizeMode: "cover",
-        justifyContent: "center",
-        backgroundColor: '#5786FF',
-        flexDirection:"column"
+        marginVertical:20,
+        justifyContent: "flex-end",
+        flexDirection:"column",
     },
-    formContainer: {
-        paddingTop: 20,
-        paddingBottom: 50,
-        marginHorizontal:20,
-        borderRadius:20,
-        marginTop:200,
-        justifyContent:"center",
-        
+    welcomeText:{
+        fontSize: 30,
+        fontWeight: "bold",
+        paddingHorizontal: 20,
+    },
+    loginText:{
+        color: 'gray',
+        fontSize: 15,
+        paddingHorizontal: 20,
+        marginBottom: 30,
     },
     labelText:{
         marginLeft: 15,
@@ -284,19 +281,38 @@ const styleLogin = StyleSheet.create({
         fontWeight: "bold",
         fontFamily: "Roboto"
     },
+    inputFocus:{
+        fontSize: 17,
+        marginVertical: 10,
+        marginHorizontal: 20,
+        paddingHorizontal: 20,
+        paddingVertical: 10,
+        alignSelf: "stretch",
+        justifyContent: "center",
+        height: 55,
+        borderWidth: 2,
+        borderRadius: 30,
+        borderColor: "#017CFD",
+        color: "#017CFD",
+        backgroundColor: '#ffffff',
+        fontWeight: "normal",
+        shadowColor: "#000",
+    },
     input:{
         fontSize: 17,
         marginVertical: 10,
-        marginHorizontal:10,
+        marginHorizontal: 20,
         paddingHorizontal: 20,
+        paddingVertical: 10,
         alignSelf: "stretch",
         justifyContent: "center",
-        height:50,
-        borderRadius: 20,
+        height: 55,
+        borderWidth: 2,
+        borderRadius: 30,
         borderColor: "#ffffff",
-        color:"#000000",
-        backgroundColor: '#ffffff', 
-        fontWeight: "bold",
+        color: "#017CFD",
+        backgroundColor: '#ffffff',
+        fontWeight: "normal",
         shadowColor: "#000",
     },
     button: {
@@ -305,9 +321,9 @@ const styleLogin = StyleSheet.create({
         justifyContent: 'center',
         marginHorizontal:70,
         paddingHorizontal: 20,
-        borderRadius: 10,
-        backgroundColor: "#ffffff",
-        height: 45,
+        borderRadius: 30,
+        backgroundColor: '#0148A4',
+        height: 55,
         marginVertical: 10,
         shadowColor: "#000",
         shadowOffset: {
@@ -316,7 +332,6 @@ const styleLogin = StyleSheet.create({
         },
         shadowOpacity: 0.32,
         shadowRadius: 5.46,
-
         elevation: 9,
     },
     buttonText:{
@@ -329,6 +344,26 @@ const styleLogin = StyleSheet.create({
     avatarContainer:{
         alignSelf: "center",
         paddingVertical:30,
+    },
+    noAccountText:{
+        fontSize: 15,
+        paddingHorizontal: 10,
+        color: '#000',
+    },
+    modalBackground: {
+        flex: 1,
+        alignItems: 'center',
+        flexDirection: 'column',
+        justifyContent: 'space-around',
+    },
+    activityIndicatorWrapper:{
+        backgroundColor: '#FFFFFF',
+        height: 100,
+        width: 100,
+        borderRadius: 10,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-around'
     }
 }) 
 

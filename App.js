@@ -1,11 +1,18 @@
 import React from 'react';
-import {Text} from 'react-native';
-import LoginScreen from './src/screen/login-screen';
-import HomeScreen from './src/screen/home-screen';
-import CategoryDetailScreen from './src/screen/category-detail-screen';
-import ModalScreen from './src/screen/modal-screen';
+import ModalScreen from './src/screen/ModalScreen';
+import { NavigationContainer } from '@react-navigation/native';
+import RootStackScreen from './src/navigation/RootStack';
 
-function App() {
-  return <ModalScreen />;
+class App extends React.Component {
+  componentDidMount(){
+    console.ignoredYellowBox = ['Warning: Each', 'Warning: Failed'];
+    console.disableYellowBox = true;
+  }
+  render(){
+  return (
+    <NavigationContainer>
+      <RootStackScreen />
+    </NavigationContainer>
+  )}
 }
 export default App;
