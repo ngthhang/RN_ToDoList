@@ -15,9 +15,8 @@ class CategoryList extends Component {
 
 
     async componentDidMount(){
-        await this.getData();
+        this.getData();
     }
-
 
     getData =async () => {
         var tempData = [];
@@ -54,7 +53,8 @@ class CategoryList extends Component {
                 <ScrollView contentContainerStyle={styleCategory.scrollView}>
                     <Text style={styleCategory.labelText}>All tasks</Text>
                     {listData.map((item) => (
-                        <TaskItem task={item.task} category={item.category} id={item.key} key={item.key} complete={item.complete} />
+                        <TaskItem task={item.task} category={item.category} id
+                        ={item.key} key={item.key} complete={item.complete} />
                     ))}
                 </ScrollView>
             </View>

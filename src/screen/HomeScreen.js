@@ -5,7 +5,6 @@ import HomeHeader from '../components/HomeHeader';
 import HomeScrollView from '../components/HomeScrollView';
 import FloatButton from '../components/FloatButton';
 import { firebaseApp } from '../utils/FirebaseConfig';
-import Toast from '../components/Toast';
 import Loader from './Loader';
 
 
@@ -33,7 +32,6 @@ class HomeScreen extends Component{
 
     writeUserData = () => {
         this.setState({
-            isToast: true,
             isLoading: true
         })
         const currentUser = firebaseApp.auth().currentUser; 
@@ -112,7 +110,6 @@ class HomeScreen extends Component{
         return(
             <View style={styleHome.container}>
                 <Loader loading={isLoading} />
-                <Toast message='refreshing....' visible={isToast} />
                 <HomeHeader signOut={this.signOut} name={username} todayTask={all} />
                 <HomeScrollView 
                     navigation={this.props.navigation} 

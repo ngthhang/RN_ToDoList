@@ -296,7 +296,6 @@ const styleLogin = StyleSheet.create({
         color: "#017CFD",
         backgroundColor: '#ffffff',
         fontWeight: "normal",
-        shadowColor: "#000",
     },
     input:{
         fontSize: 17,
@@ -313,7 +312,6 @@ const styleLogin = StyleSheet.create({
         color: "#017CFD",
         backgroundColor: '#ffffff',
         fontWeight: "normal",
-        shadowColor: "#000",
     },
     button: {
         display: "flex",
